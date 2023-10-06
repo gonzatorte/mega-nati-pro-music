@@ -1,0 +1,28 @@
+{
+  "name": "adivina-cual",
+  "version": "1.0.0",
+  "description": "1. Los siguientes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx ejs -p ./template_file.ejs -o ./output.html",
+    "watch": "nodemon index.js --watch 'index.html.ejs' --watch 'index.js'",
+    "serve": "npx http-server -p 8080 ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gonzatorte@github.com/gonzatorte/adivina-cual.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonzatorte/adivina-cual/issues"
+  },
+  "homepage": "https://github.com/gonzatorte/adivina-cual#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "http-server": "^14.1.1",
+    "nodemon": "^2.0.19",
+    "qrcode": "^1.5.1"
+  }
+}
